@@ -1,0 +1,23 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+TECHNICAL SPECIFICATION AND LUBRICATION SHEET: CC-101-SPEC
+EQUIPMENT: Three-Stage Centrifugal Process Gas Compressor CC-101
+MANUFACTURER SPECIFICATION | REVISION: 2.3 | LOCATION: Gas Processing Train A
+
+1. LUBRICATING OIL REQUIREMENTS AND RESERVOIR CAPACITY
+Compressor CC-101 and its associated reduction gearbox GB-101 use ISO VG 46 synthetic polyalphaolefin (PAO) turbine lubricating oil.
+The main lubricating oil reservoir RES-101 has a total operational capacity of 450 Liters.
+The minimum allowable oil level in the reservoir sight glass is 65% (approximately 290 Liters).
+Oil supply pressure to journal bearings must be maintained between 2.0 bar and 2.4 bar at an oil cooler outlet temperature of 42°C to 48°C.
+Oil replacement is required every 8000 operating hours or when kinematic viscosity deviates by more than +/- 10% from 46 cSt at 40°C.
+
+2. DRY GAS SEAL SPECIFICATIONS AND PRESSURE DIFFERENTIAL
+Dry gas seals on CC-101 utilize nitrogen buffer gas supplied from header N2-HDR-01.
+Seal gas pressure differential across the primary seal face must be maintained at a minimum of +0.35 bar above process suction pressure.
+Primary seal vent leakage rate must remain below 15.0 normal liters per minute (Nl/min).
+If primary vent flow exceeds 25.0 Nl/min, alarm ALM-SEAL-101 is asserted and secondary containment seal backup initiates.
+
+3. OPERATING LIMITS AND SURGE MARGIN
+Maximum continuous speed for CC-101 is 11,400 RPM with normal operating speed at 10,850 RPM.
+The anti-surge valve ASV-101 modulated controller requires a minimum 12% safety margin from the predicted surge limit line.
+Maximum allowable journal bearing temperature is 85°C (warning alarm at 80°C).
+Total axial shaft displacement must not exceed 0.25 mm from thrust collar datum position.

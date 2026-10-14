@@ -1,0 +1,22 @@
+Build a Python project in this directory: plantdoc-grounded-qa — a grounded plant-doc Q&A agent (proof-of-work for Raven Systems' AI-agent-with-grounding pain points).
+
+Read PLAN.md in this directory first and follow it exactly. Scope, TDD, and anti-invention rules are non-negotiable.
+
+PROJECT SPEC (summary of PLAN.md):
+1. Doc adapter: create 8-12 SYNTHETIC plant docs in data/docs/*.txt (each file starts with a "SYNTHETIC DATA" header note) — mix of SOPs, maintenance records, equipment datasheets, shift logs. Include specific facts, numbers, equipment IDs, dates (all fictional but internally consistent).
+2. Real local retriever (NO fake RAG): pure-Python TF-IDF/BM25-style scorer, stdlib only (no sklearn, no model downloads, no API keys). Loader + chunker: each chunk gets {doc_id, chunk_id, text}. retrieve(query, k) returns top-k scored chunks. Must genuinely retrieve — no hardcoded answers.
+3. Grounded Q&A: answer(question) retrieves top-k, composes an EXTRACTIVE answer from retrieved chunks only, with [doc_id:chunk_id] citations. If nothing relevant is retrieved, refuse or warn explicitly. Each answer records a review trail: query, retrieved chunks+scores, answer, citations, timestamp, reviewer status (pending), optional feedback — persisted to a JSONL review log.
+4. Ungrounded baseline: answer_ungrounded(question) — a documented negative control that answers WITHOUT retrieval (generic plausible templates only, never doc content), so the eval can show what grounding fixes.
+5. Eval harness: 25 Q/A pairs in eval/eval_set.json (question + expected key claims). Deterministic automated checkers: citation precision = fraction of citations whose cited chunk actually supports the citing claim (word-overlap support check); hallucination rate = fraction of answer claims unsupported by any retrieved chunk. Run both pipelines over the 25 pairs, write real measured numbers to eval/results.json. Report grounded vs ungrounded.
+6. CLI: python -m plantdoc_qa ask "..." (prints answer + citations + review trail), python -m plantdoc_qa eval (prints the comparison table and writes eval/results.json).
+
+TDD REQUIREMENT: tests first (red), then code (green), then refactor — for every milestone. pytest must be FULLY GREEN at the end. Target 20+ meaningful tests. You may run pytest yourself repeatedly until green.
+
+OTHER REQUIREMENTS:
+- README.md documenting: what it does, how to run (ask + eval), the measured test count, and the measured eval numbers (citation precision and hallucination rate grounded vs ungrounded) taken from a REAL eval run.
+- Stdlib-only runtime; requirements.txt may list pytest only (dev). No secrets anywhere.
+- Do NOT invent metrics: every number in README must come from a real pytest/eval run.
+- Do NOT `git init`/`gh repo create` yourself — just build the code and tests here. The coordinator handles the repo.
+- Work inside this directory only. Free tokens only: no paid APIs.
+
+DELIVERABLE: complete, tested, working project with pytest fully green and eval/results.json containing real numbers from a real run. Then report: test count, the two eval numbers (grounded vs ungrounded), and one-command repro steps.

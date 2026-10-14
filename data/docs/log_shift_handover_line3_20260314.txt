@@ -1,0 +1,24 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+OPERATIONS SHIFT HANDOVER LOG: LOG-SH-2026-0314-L3
+UNIT: Production Line 3 & Utilities Area | DATE: 2026-03-14
+SHIFT: Night Shift (22:00 - 06:00) to Morning Shift (06:00 - 14:00)
+OUTGOING SUPERVISOR: J. Vance (Badge #7412) | INCOMING SUPERVISOR: M. Chen (Badge #6189)
+
+1. SAFETY INCIDENTS AND PERMITS SUMMARY
+Zero Lost Time Injuries (LTI) or near-miss incidents reported during night shift.
+Hot Work Permit HWP-8842 closed at 01:30 following torch cutting repairs on transfer chute TC-03.
+Confined Space Entry Permit CSE-209 remains ACTIVE for inspection of wastewater holding tank TK-901 (safety watcher posted: R. Gomez).
+Emergency eyewash stations in battery charging bay EW-03 inspected and flushed at 23:45.
+
+2. OPERATIONAL EVENTS AND ABNORMAL CONDITIONS
+Centrifugal Compressor CC-101: At 02:15, lube oil supply temperature climbed to 78°C due to auxiliary oil cooler fan MCC breaker 42-CF1 trip.
+Operator dispatched to Substation 2 reset the breaker at 02:40; lube oil temperature stabilized back to normal 46°C by 03:10.
+Boiler Feed Pump BFP-402: At 04:30, seal water supply filter A differential pressure rose to 0.8 bar (high dp alarm).
+Switched manually to standby filter B; filter A cartridge isolated and tagged out for maintenance work order WO-99214.
+Conveyor CV-88: Material buildup on impact idler row 4 cleared during planned 15-minute interlock stop at 03:45.
+
+3. ENVIRONMENTAL COMPLIANCE AND PRODUCTION PRODUCTION TOTALS
+Effluent Treatment Plant ETP-1: Total neutral basin throughput was 1,120 m3. Final discharge pH held stable at 7.3 with average COD 142 mg/L.
+Cooling Tower CT-3: Basin conductivity reached 2380 uS/cm at 05:00; blowdown valve BDV-303 performed routine automatic modulation.
+Finished clinker production reached 3,420 metric tons against nightly target of 3,630 metric tons (94.2% quota fulfillment).
+Ongoing focus for incoming morning shift: monitor CC-101 fan breaker current draw and execute work order WO-99214 on BFP-402 filter A.

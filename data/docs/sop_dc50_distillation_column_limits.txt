@@ -1,0 +1,22 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-PROC-050
+EQUIPMENT: Atmospheric Multi-Tray Distillation Column DC-50
+REVISION: 4.0 | EFFECTIVE DATE: 2025-07-12 | LOCATION: Fractionation Train 2
+
+1. OPERATIONAL PRESSURE AND REBOILER STEAM CONSTRAINTS
+Distillation Column DC-50 operates at an overhead top vapor pressure of 1.25 barg (+/- 0.05 barg).
+The bottom thermosiphon reboiler HE-501 is supplied with saturated motive steam at a maximum allowable pressure of 4.2 barg.
+Reboiler steam control valve TCV-501 is interlocked to throttle back if bottoms liquid temperature exceeds 164°C.
+Safety relief valves PSV-501A and PSV-501B located on the overhead column dome have a certified set relief pressure of 6.0 barg.
+
+2. DIFFERENTIAL PRESSURE, FLOODING LIMITS, AND REFLUX
+The normal operating differential pressure across column trays (measured by PDT-502 between sump and tray 32) is 45 to 60 mbar.
+A differential pressure reading exceeding 85 mbar indicates severe liquid entrainment and impending tray flooding.
+If PDT-502 alarms above 85 mbar, operator must immediately reduce feed flow rate by 20% and reduce reboiler steam duty.
+Operating top external reflux ratio must be maintained between 2.4:1 and 3.1:1 depending on feed composition analyzer AI-501 readouts.
+
+3. BOTTOMS LIQUID LEVEL MANAGEMENT AND DUMP PROTOCOL
+Bottom sump liquid level (LT-503) must be maintained at a target setpoint of 50% to 55% span.
+Low level interlock trips bottoms extraction pumps P-501A/B if sump level drops below 18% to prevent pump dry-run damage.
+High-high liquid level trip activates at 88% sump level, closing feed emergency shutdown valve ESDV-050.
+Bottoms product cooler HE-503 outlet temperature must remain below 48°C prior to transfer into intermediate storage tank TK-204.

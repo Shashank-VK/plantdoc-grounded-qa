@@ -1,0 +1,177 @@
+[
+  {
+    "id": "eval_01",
+    "question": "What is the pre-start lube oil pressure requirement for Boiler Feed Pump BFP-402?",
+    "expected_doc_id": "sop_bfp402_boiler_feed_pump",
+    "expected_key_claims": ["1.8 bar", "2.2 to 2.5 bar"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_02",
+    "question": "What radial bearing vibration velocity triggers an automatic emergency trip on BFP-402?",
+    "expected_doc_id": "sop_bfp402_boiler_feed_pump",
+    "expected_key_claims": ["7.1 mm/s RMS", "4.5 mm/s RMS"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_03",
+    "question": "What lubricating oil grade and reservoir capacity are specified for compressor CC-101?",
+    "expected_doc_id": "spec_cc101_centrifugal_compressor",
+    "expected_key_claims": ["ISO VG 46", "450 Liters"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_04",
+    "question": "What is the minimum nitrogen buffer gas differential pressure across the CC-101 dry gas seal?",
+    "expected_doc_id": "spec_cc101_centrifugal_compressor",
+    "expected_key_claims": ["+0.35 bar", "process suction pressure"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_05",
+    "question": "What is the glutaraldehyde biocide slug-dosing schedule and concentration in cooling tower CT-3?",
+    "expected_doc_id": "sop_ct03_cooling_tower_water_treatment",
+    "expected_key_claims": ["45 ppm", "Tuesday and Friday at 06:00"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_06",
+    "question": "What is the target cycles of concentration and blowdown conductivity setpoint for CT-3?",
+    "expected_doc_id": "sop_ct03_cooling_tower_water_treatment",
+    "expected_key_claims": ["4.5 and 5.2", "2400 uS/cm"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_07",
+    "question": "How long must the barring gear rotate steam turbine ST-200 before main steam admission?",
+    "expected_doc_id": "sop_st200_steam_turbine_startup",
+    "expected_key_claims": ["4.0 hours", "45 RPM"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_08",
+    "question": "What is the normal governor acceleration ramp rate for steam turbine ST-200 outside resonance zones?",
+    "expected_doc_id": "sop_st200_steam_turbine_startup",
+    "expected_key_claims": ["300 RPM/min", "3000 RPM"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_09",
+    "question": "What is the maximum allowable spacing between emergency pull-cord switches on conveyor CV-88?",
+    "expected_doc_id": "sop_cv88_conveyor_emergency_and_tensioning",
+    "expected_key_claims": ["30.0 meters", "50 N"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_10",
+    "question": "What is the ballast mass of the gravity take-up counterweight carriage on conveyor CV-88?",
+    "expected_doc_id": "sop_cv88_conveyor_emergency_and_tensioning",
+    "expected_key_claims": ["4,200 kg", "TJ-2"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_11",
+    "question": "What tray differential pressure indicates severe entrainment and flooding onset in column DC-50?",
+    "expected_doc_id": "sop_dc50_distillation_column_limits",
+    "expected_key_claims": ["85 mbar", "PDT-502"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_12",
+    "question": "What is the certified set relief pressure for safety valves PSV-501A and PSV-501B on DC-50?",
+    "expected_doc_id": "sop_dc50_distillation_column_limits",
+    "expected_key_claims": ["6.0 barg"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_13",
+    "question": "What are the regulatory statutory limits for final effluent discharge pH from ETP-1?",
+    "expected_doc_id": "sop_etp01_effluent_treatment_neutralization",
+    "expected_key_claims": ["6.5 to 8.5", "COD", "250 mg/L"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_14",
+    "question": "What is the minimum hydraulic retention time in equalization basin EQ-101 at peak inflow?",
+    "expected_doc_id": "sop_etp01_effluent_treatment_neutralization",
+    "expected_key_claims": ["8.0 hours", "150 m3/h"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_15",
+    "question": "What compressed air supply pressure and pulse duration are required for baghouse DC-12 cleaning?",
+    "expected_doc_id": "maint_dc12_baghouse_dust_collector",
+    "expected_key_claims": ["5.5 bar and 6.0 bar", "120 milliseconds"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_16",
+    "question": "What is the routine replacement schedule for filter bags in dust collector DC-12?",
+    "expected_doc_id": "maint_dc12_baghouse_dust_collector",
+    "expected_key_claims": ["18 months", "480 filter bags"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_17",
+    "question": "What is the minimum allowable dielectric breakdown voltage for transformer TR-04 insulating oil?",
+    "expected_doc_id": "spec_tr04_electrical_transformer",
+    "expected_key_claims": ["50.0 kV", "IEC 60156"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_18",
+    "question": "What concentration of acetylene (C2H2) indicates active arcing in transformer TR-04?",
+    "expected_doc_id": "spec_tr04_electrical_transformer",
+    "expected_key_claims": ["2.0 ppm", "5.0 ppm"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_19",
+    "question": "Why was the BFP-402 seal water filter switched to standby filter B during the night shift?",
+    "expected_doc_id": "log_shift_handover_line3_20260314",
+    "expected_key_claims": ["0.8 bar", "high dp alarm", "WO-99214"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_20",
+    "question": "What caused the temperature rise on compressor CC-101 at 02:15 on March 14, 2026?",
+    "expected_doc_id": "log_shift_handover_line3_20260314",
+    "expected_key_claims": ["78°C", "breaker 42-CF1 trip", "cooler fan"],
+    "in_domain": true
+  },
+  {
+    "id": "eval_21",
+    "question": "What is the maximum enrichment percentage of uranium-235 in the AP1000 nuclear reactor core?",
+    "expected_doc_id": null,
+    "expected_key_claims": [],
+    "in_domain": false
+  },
+  {
+    "id": "eval_22",
+    "question": "What is the hydraulic actuator fluid pressure specification for Airbus A350 flight control surfaces?",
+    "expected_doc_id": null,
+    "expected_key_claims": [],
+    "in_domain": false
+  },
+  {
+    "id": "eval_23",
+    "question": "What is the recommended replacement frequency for lunar rover tire tread composites?",
+    "expected_doc_id": null,
+    "expected_key_claims": [],
+    "in_domain": false
+  },
+  {
+    "id": "eval_24",
+    "question": "What are the operating limits for centrifugal slurry pump BFP-999 in reactor bay 7?",
+    "expected_doc_id": null,
+    "expected_key_claims": [],
+    "in_domain": false
+  },
+  {
+    "id": "eval_25",
+    "question": "What was the clinker production quota on Line 3 during the night shift of 2018-01-01?",
+    "expected_doc_id": null,
+    "expected_key_claims": [],
+    "in_domain": false
+  }
+]

@@ -1,0 +1,23 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-ENV-101
+EQUIPMENT: Industrial Effluent Treatment Plant ETP-1 (Neutralization & Clarification)
+REVISION: 3.2 | EFFECTIVE DATE: 2025-10-05 | LOCATION: Environmental Treatment Facility
+
+1. EQUALIZATION BASIN RESIDENCE TIME AND FLOW EQUALIZATION
+Raw process wastewater streams enter primary equalization basin EQ-101 prior to neutralization.
+The minimum hydraulic retention time (HRT) in basin EQ-101 is 8.0 hours at peak hydraulic inflow of 150 m3/h.
+Submersible agitators AG-101A and AG-101B must run continuously at 1450 RPM to prevent suspended solids settling.
+If equalization tank liquid level exceeds 85%, auxiliary overflow sump P-OVER is dispatched to storm surge pond TK-900.
+
+2. TWO-STAGE CHEMICAL NEUTRALIZATION CHEMISTRY
+Neutralization takes place across two consecutive agitated reaction tanks (NT-101 and NT-102).
+If incoming pH is below 6.0, dosing pumps DP-NAOH-1A/B meter 20% liquid sodium hydroxide (caustic soda) into NT-101.
+If incoming pH is above 8.5, dosing pumps DP-HCL-1A/B meter 15% technical hydrochloric acid solution into NT-101.
+Tank NT-102 acts as fine-trimming polishing stage; trim dosing rate is governed by PID controller maintaining pH at 7.2 to 7.8.
+Lime slurry dosing (5% hydrated calcium hydroxide) is reserved as emergency backup during high sulfate load surges.
+
+3. FINAL EFFLUENT DISCHARGE SPECIFICATIONS AND TESTING
+Discharge flume outfall analyzer AIT-DISCH measures compliance parameters continuously prior to municipal river canal release.
+Final discharge pH must strictly stay within regulatory statutory limits of 6.5 to 8.5.
+Chemical Oxygen Demand (COD) must not exceed 250 mg/L (daily composite sample testing via spectrophotometer).
+Total Suspended Solids (TSS) in final clarifier overflow must remain below 50 mg/L; turbidity exceeding 30 NTU automatically diverts discharge to recycle loop.

@@ -1,0 +1,24 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+TECHNICAL SPECIFICATION AND MAINTENANCE GUIDELINE: ELEC-TR-004
+EQUIPMENT: 25 MVA 33kV/11kV Oil-Immersed Step-Down Power Transformer TR-04
+REVISION: 3.1 | EFFECTIVE DATE: 2025-04-14 | LOCATION: Main Switchyard Substation Bay 4
+
+1. INSULATING OIL DIELECTRIC PROPERTIES AND TEST THRESHOLDS
+Transformer TR-04 is filled with 14,500 Liters of uninhibited mineral insulating oil conforming to IEC 60296.
+Dielectric breakdown voltage (measured across 2.5 mm spherical electrodes per IEC 60156) must exceed 50.0 kV for in-service oil.
+If dielectric breakdown voltage drops below 40.0 kV, the transformer oil must undergo high-vacuum filtration and dehydration immediately.
+Moisture content in oil must remain below 15 ppm at standard operating temperature.
+Dielectric dissipation factor (tan delta at 90°C) must not exceed 0.005.
+
+2. DISSOLVED GAS ANALYSIS (DGA) ACTION LIMITS
+Routine quarterly oil sampling is sent to the analytical lab for Dissolved Gas Analysis (DGA) by gas chromatography.
+Acetylene (C2H2) concentration must remain below 2.0 ppm; any value above 5.0 ppm indicates active high-energy arcing requiring emergency shutdown.
+Hydrogen (H2) baseline limit is 100 ppm; values between 100 ppm and 300 ppm require bi-weekly monitoring for partial discharge.
+Carbon monoxide (CO) to carbon dioxide (CO2) ratio below 0.10 indicates thermal degradation of cellulosic paper insulation.
+Total combustible gas (TCG) generation rate exceeding 10 ppm per day triggers immediate root-cause investigation.
+
+3. TEMPERATURE MONITORING AND COOLING CONTROLS
+Transformer TR-04 uses ONAN/ONAF cooling with two redundant fan cooling banks (Bank A and Bank B).
+Top oil temperature alarm activates at 85°C; emergency trip activates at 95°C.
+Winding hot-spot temperature indicator (WTI-401) initiates cooling fans at 65°C and asserts trip contact at 105°C.
+Silica gel desiccant in the conservator tank breather must be replaced whenever more than 60% of the crystal volume turns pink.

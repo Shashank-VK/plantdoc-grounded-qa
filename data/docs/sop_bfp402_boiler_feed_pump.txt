@@ -1,0 +1,22 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-MEC-402
+EQUIPMENT: Boiler Feed Pump BFP-402 (High-Pressure Multi-Stage Centrifugal)
+REVISION: 4.1 | EFFECTIVE DATE: 2025-11-15 | LOCATION: Power & Utilities Area B
+
+1. PRE-STARTUP INSPECTION AND PERMISSIVES
+Before initiating the electric motor drive for BFP-402, the shift technician must verify mechanical seal integrity and auxiliary lube oil supply.
+The auxiliary lube oil skid must be started in manual mode. Verify lube oil delivery pressure is at least 1.8 bar (normal operating range 2.2 to 2.5 bar).
+If lube oil pressure fails to reach 1.8 bar within 45 seconds of pump start, the permissive interlock will reject the startup sequence.
+Inspect the mechanical seal flush line for continuous flow of demineralized water at a minimum rate of 12 L/min and inlet pressure of 4.0 bar.
+
+2. VALVE ALIGNMENT AND SUCTION CHECKS
+Confirm suction isolation valve BFP-V-101 is fully open and locked with mechanical car-seal.
+Never throttle the suction valve under any operational circumstances to prevent cavitation and impeller erosion.
+Check suction pressure gauge PI-402A; minimum required suction head is 3.5 barg deaerator static head.
+Discharge minimum flow recirculation valve FCV-402 must be set to AUTO mode (minimum recirculation flow setpoint 85 m3/h).
+
+3. VIBRATION AND THERMAL TRIP LIMITS
+During steady-state operation at 2980 RPM, radial bearing vibration velocity must remain below 4.5 mm/s RMS (Alarm threshold).
+A vibration level exceeding 7.1 mm/s RMS sustained for greater than 3 seconds will trigger an automatic emergency trip of breaker 52-BFP402.
+Radial bearing metal temperatures (TE-402-1 through TE-402-4) must remain below 80°C.
+If bearing temperature exceeds 90°C, the operator must trip the unit manually within 60 seconds if automatic trip fails.

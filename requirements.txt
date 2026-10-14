@@ -1,0 +1,4 @@
+# plantdoc-grounded-qa requirements
+# Runtime is stdlib only (Python >= 3.10)
+# Dev/test requirements:
+pytest>=7.0.0

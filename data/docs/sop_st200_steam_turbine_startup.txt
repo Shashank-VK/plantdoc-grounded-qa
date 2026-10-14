@@ -1,0 +1,22 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-TURB-200
+EQUIPMENT: Multistage Extraction-Condensing Steam Turbine ST-200 (Rating: 45 MW)
+REVISION: 5.0 | EFFECTIVE DATE: 2025-05-10 | LOCATION: Cogeneration Hall Unit 2
+
+1. PRE-WARMING AND BARRING GEAR ENGAGEMENT
+Before high-pressure steam introduction to Steam Turbine ST-200, engage hydraulic turning gear (barring gear) to rotate the rotor at 45 RPM.
+The barring gear must operate continuously for a minimum of 4.0 hours prior to admission of main steam to prevent thermal rotor bowing.
+Gland steam sealing pressure must be established at 0.25 to 0.30 barg using auxiliary header steam before pulling surface condenser vacuum.
+Maintain surface condenser vacuum at or below -0.88 barg (-88 kPa gauge) before tripping turning gear and rolling on steam.
+
+2. STEAM QUALITY AND EXPANSION CRITERIA
+Main inlet throttle steam temperature must exhibit a minimum of 50°C superheat above steam saturation temperature.
+Rotor-to-casing differential expansion measured by eddy-current probes DE-201 and DE-202 must not exceed 3.2 mm positive or 1.5 mm negative.
+If differential expansion reaches 2.8 mm during thermal soak, the turbine acceleration ramp must be put on hold immediately.
+Exhaust hood casing temperature must not exceed 85°C; water spray desuperheater on condenser neck activates if temperature reaches 75°C.
+
+3. GOVERNOR SPEED RAMPING AND TRIP CHECKS
+Accelerate turbine rotor through critical speed resonance zones (1400 - 1800 RPM) at an accelerated ramp rate of 600 RPM/min.
+Normal ramp rate outside resonance bands is 300 RPM/min up to synchronous rated speed of 3000 RPM (50 Hz).
+Perform mechanical overspeed trip test during routine semi-annual safety audit; overspeed bolt must actuate at 3300 RPM (+/- 30 RPM, 110% of rated speed).
+Emergency hand trip push-buttons (located at field station and DCS console) immediately de-energize emergency stop valves ESV-201 and ESV-202 within 0.15 seconds.

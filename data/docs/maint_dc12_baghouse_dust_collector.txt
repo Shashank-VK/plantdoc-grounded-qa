@@ -1,0 +1,23 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+MAINTENANCE MANUAL & OPERATING LOG: MAINT-DC-012
+EQUIPMENT: Pulse-Jet Fabric Filter Baghouse Dust Collector DC-12
+REVISION: 1.4 | EFFECTIVE DATE: 2025-06-18 | LOCATION: Clinker Handling & Milling Unit
+
+1. PULSE-JET CLEANING PARAMETERS AND COMPRESSED AIR SUPPLY
+Baghouse DC-12 contains 480 filter bags arranged in 16 rows cleaned by reverse pulse-jet compressed air valves PV-01 through PV-16.
+Cleaning air supply reservoir pressure must be maintained strictly between 5.5 bar and 6.0 bar dry air.
+Pulse firing duration timer is calibrated to 120 milliseconds per valve firing sequence.
+The sequential cleaning controller initiates on demand when tube sheet differential pressure across bags exceeds 1500 Pa (15.0 mbar).
+Normal clean-filter operating differential pressure range is 800 Pa to 1200 Pa.
+
+2. FILTER MEDIA REPLACEMENT CRITERIA AND CAGE CHECKS
+Filter bags are fabricated from PTFE-membrane laminated needle-punched fiberglass felt (2.0 mm thickness, rating 260°C continuous).
+Routine replacement of all 480 filter bags is mandated every 18 months or earlier if baseline clean differential pressure exceeds 1800 Pa.
+During bag changeout, each internal support cage (12-wire galvanized carbon steel) must be inspected for corrosion, burrs, or broken rings.
+Fluorescent dye powder test (using black light UV inspection in clean air plenum) must be conducted post-replacement to detect pinhole leaks.
+
+3. HOPPER ASH LEVEL AND ROTARY AIRLOCK DISCHARGE
+Dust collected on exterior bag surfaces falls into hopper HOP-12 equipped with bin aerators and heating pads.
+Hopper rotary paddle level switch LSH-12 alarms when collected ash reaches 70% hopper storage capacity.
+Rotary airlock valve RAV-12 operates at fixed speed 15 RPM to discharge ash into dense-phase pneumatic conveying vessel PV-10.
+Hopper wall heating pads must maintain temperature above 135°C to prevent acid dew point condensation and bag blinding.

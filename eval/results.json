@@ -1,0 +1,592 @@
+{
+  "num_pairs": 25,
+  "grounded_citation_precision": 0.92,
+  "grounded_hallucination_rate": 0.0,
+  "grounded_refusal_rate": 0.8,
+  "ungrounded_citation_precision": 0.0,
+  "ungrounded_hallucination_rate": 1.0,
+  "ungrounded_refusal_rate": 0.0,
+  "pair_results": [
+    {
+      "id": "eval_01",
+      "question": "What is the pre-start lube oil pressure requirement for Boiler Feed Pump BFP-402?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "If lube oil pressure fails to reach 1.8 bar within 45 seconds of pump start, the permissive interlock will reject the startup sequence. [sop_bfp402_boiler_feed_pump:sec1] Boiler Feed Pump BFP-402: At 04:30, seal water supply filter A differential pressure rose to 0.8 bar (high dp alarm). [log_shift_handover_line3_20260314:sec2] Before initiating the electric motor drive for BFP-402, the shift technician must verify mechanical seal integrity and auxiliary lube oil supply. [sop_bfp402_boiler_feed_pump:sec1]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec2",
+          "sop_bfp402_boiler_feed_pump:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Industrial centrifugal pump protocols typically suggest maintaining suction pressure above 1.5 to 2.5 bar and verifying mechanical seal flush cooling prior to energizing. [generic_fluid:std_pump_sop]",
+        "citations": [
+          "generic_fluid:std_pump_sop"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_02",
+      "question": "What radial bearing vibration velocity triggers an automatic emergency trip on BFP-402?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "During steady-state operation at 2980 RPM, radial bearing vibration velocity must remain below 4.5 mm/s RMS (Alarm threshold). [sop_bfp402_boiler_feed_pump:sec3] A vibration level exceeding 7.1 mm/s RMS sustained for greater than 3 seconds will trigger an automatic emergency trip of breaker 52-BFP402. [sop_bfp402_boiler_feed_pump:sec3] Radial bearing metal temperatures (TE-402-1 through TE-402-4) must remain below 80°C. [sop_bfp402_boiler_feed_pump:sec3]",
+        "citations": [
+          "sop_bfp402_boiler_feed_pump:sec3"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Industrial centrifugal pump protocols typically suggest maintaining suction pressure above 1.5 to 2.5 bar and verifying mechanical seal flush cooling prior to energizing. [generic_fluid:std_pump_sop]",
+        "citations": [
+          "generic_fluid:std_pump_sop"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_03",
+      "question": "What lubricating oil grade and reservoir capacity are specified for compressor CC-101?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Compressor CC-101 and its associated reduction gearbox GB-101 use ISO VG 46 synthetic polyalphaolefin (PAO) turbine lubricating oil. [spec_cc101_centrifugal_compressor:sec1] The main lubricating oil reservoir RES-101 has a total operational capacity of 450 Liters. [spec_cc101_centrifugal_compressor:sec1] The minimum allowable oil level in the reservoir sight glass is 65% (approximately 290 Liters). [spec_cc101_centrifugal_compressor:sec1]",
+        "citations": [
+          "spec_cc101_centrifugal_compressor:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard multi-stage gas compressor operating guidelines recommend ISO VG 32 or 46 oil with normal bearing temperatures kept under 80°C to 90°C. Anti-surge controllers maintain a typical 10% safety margin. [machinery_best_practice:compressors]",
+        "citations": [
+          "machinery_best_practice:compressors"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_04",
+      "question": "What is the minimum nitrogen buffer gas differential pressure across the CC-101 dry gas seal?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Dry gas seals on CC-101 utilize nitrogen buffer gas supplied from header N2-HDR-01. [spec_cc101_centrifugal_compressor:sec2] Seal gas pressure differential across the primary seal face must be maintained at a minimum of +0.35 bar above process suction pressure. [spec_cc101_centrifugal_compressor:sec2] If primary vent flow exceeds 25.0 Nl/min, alarm ALM-SEAL-101 is asserted and secondary containment seal backup initiates. [spec_cc101_centrifugal_compressor:sec2]",
+        "citations": [
+          "spec_cc101_centrifugal_compressor:sec2"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard multi-stage gas compressor operating guidelines recommend ISO VG 32 or 46 oil with normal bearing temperatures kept under 80°C to 90°C. Anti-surge controllers maintain a typical 10% safety margin. [machinery_best_practice:compressors]",
+        "citations": [
+          "machinery_best_practice:compressors"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_05",
+      "question": "What is the glutaraldehyde biocide slug-dosing schedule and concentration in cooling tower CT-3?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Non-oxidizing biocide (glutaraldehyde 45 ppm active concentration) must be slug-dosed twice weekly: every Tuesday and Friday at 06:00. [sop_ct03_cooling_tower_water_treatment:sec2] During slug dosing of glutaraldehyde, blowdown valve BDV-303 must be locked shut in manual mode for 4 hours to prevent environmental chemical discharge. [sop_ct03_cooling_tower_water_treatment:sec2] Cooling Tower CT-3 operates at a target cycles of concentration (CoC) between 4.5 and 5.2. [sop_ct03_cooling_tower_water_treatment:sec1]",
+        "citations": [
+          "sop_ct03_cooling_tower_water_treatment:sec1",
+          "sop_ct03_cooling_tower_water_treatment:sec2"
+        ],
+        "status": "grounded",
+        "citation_precision": 0.6667,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Evaporative cooling tower maintenance generally involves biocide dosing on an alternating weekly cycle and blowdown conductivity regulation between 2000 and 3000 uS/cm. [general_env:cooling_water]",
+        "citations": [
+          "general_env:cooling_water"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_06",
+      "question": "What is the target cycles of concentration and blowdown conductivity setpoint for CT-3?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Cooling Tower CT-3 operates at a target cycles of concentration (CoC) between 4.5 and 5.2. [sop_ct03_cooling_tower_water_treatment:sec1] Cooling Tower CT-3: Basin conductivity reached 2380 uS/cm at 05:00; blowdown valve BDV-303 performed routine automatic modulation. [log_shift_handover_line3_20260314:sec3] The blowdown conductivity setpoint is 2400 uS/cm; if conductivity exceeds 2600 uS/cm, auxiliary blowdown line opens. [sop_ct03_cooling_tower_water_treatment:sec1]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec3",
+          "sop_ct03_cooling_tower_water_treatment:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Evaporative cooling tower maintenance generally involves biocide dosing on an alternating weekly cycle and blowdown conductivity regulation between 2000 and 3000 uS/cm. [general_env:cooling_water]",
+        "citations": [
+          "general_env:cooling_water"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_07",
+      "question": "How long must the barring gear rotate steam turbine ST-200 before main steam admission?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Before high-pressure steam introduction to Steam Turbine ST-200, engage hydraulic turning gear (barring gear) to rotate the rotor at 45 RPM. [sop_st200_steam_turbine_startup:sec1] The barring gear must operate continuously for a minimum of 4.0 hours prior to admission of main steam to prevent thermal rotor bowing. [sop_st200_steam_turbine_startup:sec1] Maintain surface condenser vacuum at or below -0.88 barg (-88 kPa gauge) before tripping turning gear and rolling on steam. [sop_st200_steam_turbine_startup:sec1]",
+        "citations": [
+          "sop_st200_steam_turbine_startup:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard utility steam turbines typically require turning gear operation for several hours prior to roll, with rotor critical speed acceleration kept above 400 RPM/min. [power_standard:turbines]",
+        "citations": [
+          "power_standard:turbines"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_08",
+      "question": "What is the normal governor acceleration ramp rate for steam turbine ST-200 outside resonance zones?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Accelerate turbine rotor through critical speed resonance zones (1400 - 1800 RPM) at an accelerated ramp rate of 600 RPM/min. [sop_st200_steam_turbine_startup:sec3] Normal ramp rate outside resonance bands is 300 RPM/min up to synchronous rated speed of 3000 RPM (50 Hz). [sop_st200_steam_turbine_startup:sec3] Before high-pressure steam introduction to Steam Turbine ST-200, engage hydraulic turning gear (barring gear) to rotate the rotor at 45 RPM. [sop_st200_steam_turbine_startup:sec1]",
+        "citations": [
+          "sop_st200_steam_turbine_startup:sec1",
+          "sop_st200_steam_turbine_startup:sec3"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard utility steam turbines typically require turning gear operation for several hours prior to roll, with rotor critical speed acceleration kept above 400 RPM/min. [power_standard:turbines]",
+        "citations": [
+          "power_standard:turbines"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_09",
+      "question": "What is the maximum allowable spacing between emergency pull-cord switches on conveyor CV-88?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Emergency pull-cord stop switches (SW-PULL-01 through SW-PULL-40) are installed along both walkways of Conveyor CV-88. [sop_cv88_conveyor_emergency_and_tensioning:sec1] The maximum allowable spacing between consecutive pull-cord switches is 30.0 meters. [sop_cv88_conveyor_emergency_and_tensioning:sec1] Monthly physical functional verification requires manual tripping of at least 5 randomly selected pull-cord stations and logging reset status in DCS. [sop_cv88_conveyor_emergency_and_tensioning:sec1]",
+        "citations": [
+          "sop_cv88_conveyor_emergency_and_tensioning:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Bulk materials conveyor safety standards specify pull cord switch spacing of approximately 25 to 35 meters and periodic counterweight tension verification. [bulk_handling:safety_code]",
+        "citations": [
+          "bulk_handling:safety_code"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_10",
+      "question": "What is the ballast mass of the gravity take-up counterweight carriage on conveyor CV-88?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Conveyor CV-88 utilizes a gravity take-up counterweight carriage tower located at transfer junction TJ-2. [sop_cv88_conveyor_emergency_and_tensioning:sec2] The specified operational ballast mass for the tension carriage is exactly 4,200 kg steel-encased concrete ballast blocks. [sop_cv88_conveyor_emergency_and_tensioning:sec2] If take-up carriage drops below 300 mm clearance, emergency re-splicing or belt cut-out is required due to belt elongation exceeding 1.8%. [sop_cv88_conveyor_emergency_and_tensioning:sec2]",
+        "citations": [
+          "sop_cv88_conveyor_emergency_and_tensioning:sec2"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Bulk materials conveyor safety standards specify pull cord switch spacing of approximately 25 to 35 meters and periodic counterweight tension verification. [bulk_handling:safety_code]",
+        "citations": [
+          "bulk_handling:safety_code"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_11",
+      "question": "What tray differential pressure indicates severe entrainment and flooding onset in column DC-50?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "A differential pressure reading exceeding 85 mbar indicates severe liquid entrainment and impending tray flooding. [sop_dc50_distillation_column_limits:sec2] The normal operating differential pressure across column trays (measured by PDT-502 between sump and tray 32) is 45 to 60 mbar. [sop_dc50_distillation_column_limits:sec2] Distillation Column DC-50 operates at an overhead top vapor pressure of 1.25 barg (+/- 0.05 barg). [sop_dc50_distillation_column_limits:sec1]",
+        "citations": [
+          "sop_dc50_distillation_column_limits:sec1",
+          "sop_dc50_distillation_column_limits:sec2"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Fractionation columns are normally operated within differential pressure limits of 50 to 100 mbar to prevent liquid entrainment, with reflux ratios adjusted per overhead purity. [chem_eng:fractionation_basics]",
+        "citations": [
+          "chem_eng:fractionation_basics"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_12",
+      "question": "What is the certified set relief pressure for safety valves PSV-501A and PSV-501B on DC-50?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Safety relief valves PSV-501A and PSV-501B located on the overhead column dome have a certified set relief pressure of 6.0 barg. [sop_dc50_distillation_column_limits:sec1] Distillation Column DC-50 operates at an overhead top vapor pressure of 1.25 barg (+/- 0.05 barg). [sop_dc50_distillation_column_limits:sec1] The bottom thermosiphon reboiler HE-501 is supplied with saturated motive steam at a maximum allowable pressure of 4.2 barg. [sop_dc50_distillation_column_limits:sec1]",
+        "citations": [
+          "sop_dc50_distillation_column_limits:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Fractionation columns are normally operated within differential pressure limits of 50 to 100 mbar to prevent liquid entrainment, with reflux ratios adjusted per overhead purity. [chem_eng:fractionation_basics]",
+        "citations": [
+          "chem_eng:fractionation_basics"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_13",
+      "question": "What are the regulatory statutory limits for final effluent discharge pH from ETP-1?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Final discharge pH must strictly stay within regulatory statutory limits of 6.5 to 8.5. [sop_etp01_effluent_treatment_neutralization:sec3] Effluent Treatment Plant ETP-1: Total neutral basin throughput was 1,120 m3. [log_shift_handover_line3_20260314:sec3] Final discharge pH held stable at 7.3 with average COD 142 mg/L. [log_shift_handover_line3_20260314:sec3]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec3",
+          "sop_etp01_effluent_treatment_neutralization:sec3"
+        ],
+        "status": "grounded",
+        "citation_precision": 0.6667,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Wastewater treatment plants commonly utilize two-stage pH neutralization targeting effluent pH between 6.0 and 9.0 and monitoring COD limits per municipal bylaws. [environmental_rules:wastewater_guide]",
+        "citations": [
+          "environmental_rules:wastewater_guide"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_14",
+      "question": "What is the minimum hydraulic retention time in equalization basin EQ-101 at peak inflow?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "The minimum hydraulic retention time (HRT) in basin EQ-101 is 8.0 hours at peak hydraulic inflow of 150 m3/h. [sop_etp01_effluent_treatment_neutralization:sec1] Raw process wastewater streams enter primary equalization basin EQ-101 prior to neutralization. [sop_etp01_effluent_treatment_neutralization:sec1] If equalization tank liquid level exceeds 85%, auxiliary overflow sump P-OVER is dispatched to storm surge pond TK-900. [sop_etp01_effluent_treatment_neutralization:sec1]",
+        "citations": [
+          "sop_etp01_effluent_treatment_neutralization:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Industrial centrifugal pump protocols typically suggest maintaining suction pressure above 1.5 to 2.5 bar and verifying mechanical seal flush cooling prior to energizing. [generic_fluid:std_pump_sop]",
+        "citations": [
+          "generic_fluid:std_pump_sop"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_15",
+      "question": "What compressed air supply pressure and pulse duration are required for baghouse DC-12 cleaning?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Baghouse DC-12 contains 480 filter bags arranged in 16 rows cleaned by reverse pulse-jet compressed air valves PV-01 through PV-16. [maint_dc12_baghouse_dust_collector:sec1] Cleaning air supply reservoir pressure must be maintained strictly between 5.5 bar and 6.0 bar dry air. [maint_dc12_baghouse_dust_collector:sec1] The sequential cleaning controller initiates on demand when tube sheet differential pressure across bags exceeds 1500 Pa (15.0 mbar). [maint_dc12_baghouse_dust_collector:sec1]",
+        "citations": [
+          "maint_dc12_baghouse_dust_collector:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Pulse-jet baghouse collectors normally operate with clean air differential pressures between 500 and 1500 Pa, using 5 to 7 bar compressed air for on-line pulsing. [filtration:dust_collector_guide]",
+        "citations": [
+          "filtration:dust_collector_guide"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_16",
+      "question": "What is the routine replacement schedule for filter bags in dust collector DC-12?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Routine replacement of all 480 filter bags is mandated every 18 months or earlier if baseline clean differential pressure exceeds 1800 Pa. [maint_dc12_baghouse_dust_collector:sec2] Baghouse DC-12 contains 480 filter bags arranged in 16 rows cleaned by reverse pulse-jet compressed air valves PV-01 through PV-16. [maint_dc12_baghouse_dust_collector:sec1] Filter bags are fabricated from PTFE-membrane laminated needle-punched fiberglass felt (2.0 mm thickness, rating 260°C continuous). [maint_dc12_baghouse_dust_collector:sec2]",
+        "citations": [
+          "maint_dc12_baghouse_dust_collector:sec1",
+          "maint_dc12_baghouse_dust_collector:sec2"
+        ],
+        "status": "grounded",
+        "citation_precision": 0.6667,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Pulse-jet baghouse collectors normally operate with clean air differential pressures between 500 and 1500 Pa, using 5 to 7 bar compressed air for on-line pulsing. [filtration:dust_collector_guide]",
+        "citations": [
+          "filtration:dust_collector_guide"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_17",
+      "question": "What is the minimum allowable dielectric breakdown voltage for transformer TR-04 insulating oil?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "If dielectric breakdown voltage drops below 40.0 kV, the transformer oil must undergo high-vacuum filtration and dehydration immediately. [spec_tr04_electrical_transformer:sec1] Transformer TR-04 is filled with 14,500 Liters of uninhibited mineral insulating oil conforming to IEC 60296. [spec_tr04_electrical_transformer:sec1] Dielectric breakdown voltage (measured across 2.5 mm spherical electrodes per IEC 60156) must exceed 50.0 kV for in-service oil. [spec_tr04_electrical_transformer:sec1]",
+        "citations": [
+          "spec_tr04_electrical_transformer:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Power transformer maintenance guidelines suggest oil breakdown voltage exceeding 40 kV and monitoring dissolved combustible gases like hydrogen and acetylene for thermal faults. [ieee_guide:power_transformers]",
+        "citations": [
+          "ieee_guide:power_transformers"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_18",
+      "question": "What concentration of acetylene (C2H2) indicates active arcing in transformer TR-04?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Acetylene (C2H2) concentration must remain below 2.0 ppm; any value above 5.0 ppm indicates active high-energy arcing requiring emergency shutdown. [spec_tr04_electrical_transformer:sec2] Transformer TR-04 uses ONAN/ONAF cooling with two redundant fan cooling banks (Bank A and Bank B). [spec_tr04_electrical_transformer:sec3] Transformer TR-04 is filled with 14,500 Liters of uninhibited mineral insulating oil conforming to IEC 60296. [spec_tr04_electrical_transformer:sec1]",
+        "citations": [
+          "spec_tr04_electrical_transformer:sec1",
+          "spec_tr04_electrical_transformer:sec2",
+          "spec_tr04_electrical_transformer:sec3"
+        ],
+        "status": "grounded",
+        "citation_precision": 0.6667,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Power transformer maintenance guidelines suggest oil breakdown voltage exceeding 40 kV and monitoring dissolved combustible gases like hydrogen and acetylene for thermal faults. [ieee_guide:power_transformers]",
+        "citations": [
+          "ieee_guide:power_transformers"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_19",
+      "question": "Why was the BFP-402 seal water filter switched to standby filter B during the night shift?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Boiler Feed Pump BFP-402: At 04:30, seal water supply filter A differential pressure rose to 0.8 bar (high dp alarm). [log_shift_handover_line3_20260314:sec2] Switched manually to standby filter B; filter A cartridge isolated and tagged out for maintenance work order WO-99214. [log_shift_handover_line3_20260314:sec2] Before initiating the electric motor drive for BFP-402, the shift technician must verify mechanical seal integrity and auxiliary lube oil supply. [sop_bfp402_boiler_feed_pump:sec1]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec2",
+          "sop_bfp402_boiler_feed_pump:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Industrial centrifugal pump protocols typically suggest maintaining suction pressure above 1.5 to 2.5 bar and verifying mechanical seal flush cooling prior to energizing. [generic_fluid:std_pump_sop]",
+        "citations": [
+          "generic_fluid:std_pump_sop"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_20",
+      "question": "What caused the temperature rise on compressor CC-101 at 02:15 on March 14, 2026?",
+      "in_domain": true,
+      "grounded": {
+        "answer": "Centrifugal Compressor CC-101: At 02:15, lube oil supply temperature climbed to 78°C due to auxiliary oil cooler fan MCC breaker 42-CF1 trip. [log_shift_handover_line3_20260314:sec2] Operator dispatched to Substation 2 reset the breaker at 02:40; lube oil temperature stabilized back to normal 46°C by 03:10. [log_shift_handover_line3_20260314:sec2] Compressor CC-101 and its associated reduction gearbox GB-101 use ISO VG 46 synthetic polyalphaolefin (PAO) turbine lubricating oil. [spec_cc101_centrifugal_compressor:sec1]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec2",
+          "spec_cc101_centrifugal_compressor:sec1"
+        ],
+        "status": "grounded",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard multi-stage gas compressor operating guidelines recommend ISO VG 32 or 46 oil with normal bearing temperatures kept under 80°C to 90°C. Anti-surge controllers maintain a typical 10% safety margin. [machinery_best_practice:compressors]",
+        "citations": [
+          "machinery_best_practice:compressors"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_21",
+      "question": "What is the maximum enrichment percentage of uranium-235 in the AP1000 nuclear reactor core?",
+      "in_domain": false,
+      "grounded": {
+        "answer": "INSUFFICIENT_EVIDENCE: No sufficiently relevant plant documentation was retrieved to answer the query 'What is the maximum enrichment percentage of uranium-235 in the AP1000 nuclear reactor core?'. Please consult plant engineering records or site safety officers directly.",
+        "citations": [],
+        "status": "refused_insufficient_evidence",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "General industrial facility management recommendations suggest following manufacturer equipment manuals and site safety compliance protocols. [general_guide:plant_maintenance]",
+        "citations": [
+          "general_guide:plant_maintenance"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_22",
+      "question": "What is the hydraulic actuator fluid pressure specification for Airbus A350 flight control surfaces?",
+      "in_domain": false,
+      "grounded": {
+        "answer": "INSUFFICIENT_EVIDENCE: No sufficiently relevant plant documentation was retrieved to answer the query 'What is the hydraulic actuator fluid pressure specification for Airbus A350 flight control surfaces?'. Please consult plant engineering records or site safety officers directly.",
+        "citations": [],
+        "status": "refused_insufficient_evidence",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "General industrial facility management recommendations suggest following manufacturer equipment manuals and site safety compliance protocols. [general_guide:plant_maintenance]",
+        "citations": [
+          "general_guide:plant_maintenance"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_23",
+      "question": "What is the recommended replacement frequency for lunar rover tire tread composites?",
+      "in_domain": false,
+      "grounded": {
+        "answer": "INSUFFICIENT_EVIDENCE: No sufficiently relevant plant documentation was retrieved to answer the query 'What is the recommended replacement frequency for lunar rover tire tread composites?'. Please consult plant engineering records or site safety officers directly.",
+        "citations": [],
+        "status": "refused_insufficient_evidence",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "General industrial facility management recommendations suggest following manufacturer equipment manuals and site safety compliance protocols. [general_guide:plant_maintenance]",
+        "citations": [
+          "general_guide:plant_maintenance"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_24",
+      "question": "What are the operating limits for centrifugal slurry pump BFP-999 in reactor bay 7?",
+      "in_domain": false,
+      "grounded": {
+        "answer": "INSUFFICIENT_EVIDENCE: No sufficiently relevant plant documentation was retrieved to answer the query 'What are the operating limits for centrifugal slurry pump BFP-999 in reactor bay 7?'. Please consult plant engineering records or site safety officers directly.",
+        "citations": [],
+        "status": "refused_insufficient_evidence",
+        "citation_precision": 1.0,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Industrial centrifugal pump protocols typically suggest maintaining suction pressure above 1.5 to 2.5 bar and verifying mechanical seal flush cooling prior to energizing. [generic_fluid:std_pump_sop]",
+        "citations": [
+          "generic_fluid:std_pump_sop"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    },
+    {
+      "id": "eval_25",
+      "question": "What was the clinker production quota on Line 3 during the night shift of 2018-01-01?",
+      "in_domain": false,
+      "grounded": {
+        "answer": "Finished clinker production reached 3,420 metric tons against nightly target of 3,630 metric tons (94.2% quota fulfillment). [log_shift_handover_line3_20260314:sec3] Zero Lost Time Injuries (LTI) or near-miss incidents reported during night shift. [log_shift_handover_line3_20260314:sec1] Ongoing focus for incoming morning shift: monitor CC-101 fan breaker current draw and execute work order WO-99214 on BFP-402 filter A. [log_shift_handover_line3_20260314:sec3]",
+        "citations": [
+          "log_shift_handover_line3_20260314:sec1",
+          "log_shift_handover_line3_20260314:sec3"
+        ],
+        "status": "grounded",
+        "citation_precision": 0.3333,
+        "hallucination_rate": 0.0
+      },
+      "ungrounded": {
+        "answer": "Standard plant shift handovers include reviewing open work orders, reporting environmental discharge levels, and logging safety incident counts across units. [operations:shift_handover_std]",
+        "citations": [
+          "operations:shift_handover_std"
+        ],
+        "status": "ungrounded_baseline",
+        "citation_precision": 0.0,
+        "hallucination_rate": 1.0
+      }
+    }
+  ],
+  "timestamp": "2026-10-14T10:30:47.381681+00:00",
+  "summary_table": "| Metric | Grounded QA (Ours) | Ungrounded Baseline | Grounding Delta |\n| :--- | :--- | :--- | :--- |\n| **Citation Precision** | 92.0% | 0.0% | +92.0% |\n| **Hallucination Rate** | 0.0% | 100.0% | -100.0% |\n| **Refusal on Out-of-Scope** | 80.0% | 0.0% | +80.0% |\n| **Evaluated Pairs** | 25 | 25 | — |\n"
+}

@@ -1,0 +1,23 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-ENV-303
+EQUIPMENT: Induced Draft Evaporative Cooling Tower CT-3 (Cells 3A & 3B)
+REVISION: 3.0 | EFFECTIVE DATE: 2025-08-20 | LOCATION: Utilities Cooling Water Island
+
+1. WATER QUALITY SETPOINTS AND BLOWDOWN REGULATION
+Cooling Tower CT-3 operates at a target cycles of concentration (CoC) between 4.5 and 5.2.
+Automatic blowdown valve BDV-303 modulates according to basin conductivity sensor AIT-301.
+The blowdown conductivity setpoint is 2400 uS/cm; if conductivity exceeds 2600 uS/cm, auxiliary blowdown line opens.
+Basin water pH must be strictly maintained between 7.2 and 7.6 through controlled metering of 98% concentrated sulfuric acid.
+If basin pH drops below 6.8, acid dosing pump P-ACID-1 is automatically disabled by safety interlock to avoid heat exchanger corrosion.
+
+2. BIOCIDE AND SCALE INHIBITOR DOSING SCHEDULE
+Oxidizing biocide (sodium hypochlorite 12% solution) is dosed continuously to maintain a free residual chlorine level of 0.3 to 0.5 ppm.
+Non-oxidizing biocide (glutaraldehyde 45 ppm active concentration) must be slug-dosed twice weekly: every Tuesday and Friday at 06:00.
+During slug dosing of glutaraldehyde, blowdown valve BDV-303 must be locked shut in manual mode for 4 hours to prevent environmental chemical discharge.
+Polymer-based anti-scalant phosphonate PBTC is metered at a steady rate of 8.5 liters per 24-hour cycle.
+
+3. BASIN SEDIMENT INSPECTION AND LEGIONELLA MONITORING
+Basin water temperature should not exceed 34°C during peak summer cooling load.
+Total aerobic microbial bacteria counts must remain below 10,000 CFU/mL based on weekly dip-slide dip-tests.
+Legionella pneumophila PCR culture testing is mandatory once every 30 days; threshold for emergency sanitization is 100 CFU/L.
+Sediment accumulation in the cold basin sump must be physically gauged every Monday; sediment depth exceeding 50 mm requires suction dredging.

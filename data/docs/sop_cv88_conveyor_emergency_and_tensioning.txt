@@ -1,0 +1,23 @@
+# SYNTHETIC DATA: Created for plantdoc-grounded-qa benchmark. All equipment IDs, SOPs, readings, and logs are fictional.
+STANDARD OPERATING PROCEDURE: SOP-MAT-088
+EQUIPMENT: Bulk Overland Belt Conveyor CV-88 (Length: 1.2 km, Width: 1200 mm)
+REVISION: 2.1 | EFFECTIVE DATE: 2025-09-01 | LOCATION: Raw Material Handling Yard 1
+
+1. EMERGENCY STOP PULL-CORD CONFIGURATION AND TESTING
+Emergency pull-cord stop switches (SW-PULL-01 through SW-PULL-40) are installed along both walkways of Conveyor CV-88.
+The maximum allowable spacing between consecutive pull-cord switches is 30.0 meters.
+Pull cables must be tensioned such that a deflection force of 50 N (or 150 mm physical pull) activates the positive-break contact mechanism.
+Monthly physical functional verification requires manual tripping of at least 5 randomly selected pull-cord stations and logging reset status in DCS.
+Any conveyor emergency stop automatically trips upstream feeder weigh-belt WB-12 within 0.50 seconds.
+
+2. BELT TENSIONING SYSTEM AND COUNTERWEIGHT SETTINGS
+Conveyor CV-88 utilizes a gravity take-up counterweight carriage tower located at transfer junction TJ-2.
+The specified operational ballast mass for the tension carriage is exactly 4,200 kg steel-encased concrete ballast blocks.
+Vertical travel clearance of the carriage must be checked weekly and kept between 450 mm and 1800 mm above base buffer stops.
+If take-up carriage drops below 300 mm clearance, emergency re-splicing or belt cut-out is required due to belt elongation exceeding 1.8%.
+
+3. RIP DETECTION AND SPLICE INTEGRITY LIMITS
+Ultrasonic non-contact belt rip detector URD-88 is mounted below the primary discharge impact cradle.
+The detector threshold is configured to alarm and trip drive motors if a belt tear or through-hole exceeds 15 mm width.
+Maximum rated belt speed is 3.2 m/s; normal operations run at 2.8 m/s with variable frequency drive VFD-88.
+Cold-vulcanized splice joints must undergo physical ultrasonic thickness and hardness inspection every 500 operating hours.
